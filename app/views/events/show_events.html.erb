@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<% @events.each do |event| %>
+  <p>
+    <strong>Event Title:</strong>
+    <%= event.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= event.description %>
+  </p>
+
+  <p>
+    <strong>Date:</strong>
+    <%= event.date %>
+  </p>
+
+  <%= link_to 'Edit', edit_event_path(event) %>
+<% end %>
