@@ -1,104 +1,29 @@
-<!-- Banner -->
 <section id="banner">
-  <h2>McMaster Entrepreneurship Association</h2>
-  <p>The innovator in you starts here.</p>
-  <ul class="actions">
-    <li><a href="#" class="button special">Events</a></li>
-    <li><a href="#" class="button">Learn More</a></li>
-  </ul>
+  <%= render partial: "banner" %>
 </section>
 
-<!-- Main -->
 <section id="main" class="container">
 
   <section class="box special">
-    <header class="major">
-      <h2>We're here to connect aspiring entrepreneurs at McMaster</h2>
-      <p>Attend our free workshops and events to get involved!</p>
-    </header>
-    <span class="image featured"><%= image_tag asset_url("pic01.jpg"), alt: "" %></span>
+    <%= render partial: "events_tagline" %>
   </section>
 
   <section class="box special features">
-    <div class="features-row">
-      <section>
-        <span class="icon major fa-bolt accent2"></span>
-        <h3><%= @events.first.try(:name) %></h3>
-        <p><%= @events.first.try(:description) %></p>
-      </section>
-      <section>
-        <span class="icon major fa-area-chart accent3"></span>
-        <h3><%= @events.second.try(:name) %></h3>
-        <p><%= @events.second.try(:description) %></p>
-      </section>
-    </div>
-    <div class="features-row">
-      <section>
-        <span class="icon major fa-cloud accent4"></span>
-        <h3><%= @events.third.try(:name) %></h3>
-        <p><%= @events.third.try(:description) %></p>
-      </section>
-      <section>
-        <span class="icon major fa-lock accent5"></span>
-        <h3><%@events.fourth..try(:name)%></h3>
-        <p><%= @events.fourth.try(:description) %></p>
-      </section>
-    </div>
+    <%= render partial: "events", locals: { events: @events } %>
   </section>
 
   <div class="row">
     <div class="6u 12u(narrower)">
-
-      <section class="box special">
-        <span class="image featured"><%= image_tag asset_url("pic02.jpg"), alt: "" %></span>
-        <h3>About Us</h3>
-        <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-        <!--
-        <ul class="actions">
-          <li><a href="#" class="button alt">Learn More</a></li>
-        </ul>
-        -->
-      </section>
-
+      <%= render partial: "about" %>
     </div>
+
     <div class="6u 12u(narrower)">
-
-      <section class="box special">
-        <span class="image featured"><%= image_tag asset_url("pic03.jpg"), alt: "" %></span>
-        <h3>Mission Statement</h3>
-        <p>Organize social meetups and engaging activities to connect entrepreneurs at McMaster. Create a friendly, collabarative and approachable environment for aspiring entrepreneurs to get involved in.</p>
-      </section>
-
+      <%= render partial: "mission" %>
     </div>
   </div>
 
 </section>
 
-<!-- CTA -->
-<section id="cta">
-
-  <h2>Get involved</h2>
-  <p>Join our mailing list!</p>
-
-  <form>
-    <div class="row uniform 50%">
-      <div class="8u 12u(mobilep)">
-        <input type="email" name="email" id="email" placeholder="Email Address" />
-      </div>
-      <div class="4u 12u(mobilep)">
-        <input type="submit" value="Sign Up" class="fit" />
-      </div>
-    </div>
-  </form>
-
-</section>
-
-<!-- Footer -->
 <footer id="footer">
-  <ul class="icons">
-    <li><%= link_to '<span class="icon fa-twitter"></span>'.html_safe, 'https://twitter.com/McMasterEntreps' %></li>
-    <li><%= link_to '<span class="icon fa-facebook"></span>'.html_safe, 'https://www.facebook.com/MacEntrepreneurship' %></li>
-    <li><%= link_to '<span class="icon fa-envelope"></span>'.html_safe, 'mailto:mcmasterentrepreneurship@gmail.com' %></li>
-  </ul>
-  <p class="copyright">&copy; 2015 McMaster Entrepreneurship Association. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+  <%= render partial: "footer" %>
 </footer>
