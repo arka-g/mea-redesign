@@ -1,24 +1,40 @@
 <div class="features-row">
   <section>
     <span class="icon major fa-bolt accent2"></span>
-    <h3><%= events.first.try(:name) %></h3>
+    <h3><%= link_to "#{events.first.try(:name)}", "#{events.first.try(:facebook_link)}" %></h3>
     <p><%= events.first.try(:description) %></p>
+    <p>When: <%= events.first.try(:date).to_date %></p>
+    <p>Where: <%= events.first.try(:location) %></p>
+    <p>Start time: <%= events.first.try(:start_time) %></p>
+    <p>End time: <%= events.first.try(:end_time) %></p>
   </section>
   <section>
     <span class="icon major fa-area-chart accent3"></span>
-    <h3><%= events.second.try(:name) %></h3>
+    <h3><%= link_to "#{events.second.try(:name)}", "#{events.second.try(:facebook_link)}" %></h3>
     <p><%= events.second.try(:description) %></p>
+    <p>When: <%= events.second.try(:date).to_date %></p>
+    <p>Where: <%= events.second.try(:location) %></p>
+    <p>Start time: <%= events.second.try(:start_time) %></p>
+    <p>End time: <%= events.second.try(:end_time) %></p>
   </section>
 </div>
 <div class="features-row">
   <section>
     <span class="icon major fa-cloud accent4"></span>
-    <h3><%= events.third.try(:name) %></h3>
+    <h3><%= link_to "#{events.third.try(:name)}", "#{events.third.try(:facebook_link)}" %></h3>
     <p><%= events.third.try(:description) %></p>
+    <p>When: <%= events.third.try(:date).to_date %></p>
+    <p>Where: <%= events.third.try(:location) %></p>
+    <p>Start time: <%= events.third.try(:start_time) %></p>
+    <p>End time: <%= events.third.try(:end_time) %></p>
   </section>
   <section>
     <span class="icon major fa-lock accent5"></span>
-    <h3><%= events.fourth.try(:name) %></h3>
+    <h3><%= link_to "#{events.fourth.try(:name)}", "#{events.fourth.try(:facebook_link)}" %></h3>
     <p><%= events.fourth.try(:description) %></p>
+    <p>When: <%= events.fourth.try(:date).to_date %></p>
+    <p>Where: <%= events.fourth.try(:location) %></p>
+    <p>Start time: <%= events.fourth.try(:start_time) %></p>
+    <p>End time: <%= events.fourth.try(:end_time) %></p>
   </section>
 </div>

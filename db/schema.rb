@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150907210913) do
+ActiveRecord::Schema.define(version: 20150909154040) do
 
   create_table "email_lists", force: :cascade do |t|
     t.string   "email_address"
@@ -23,9 +23,13 @@ ActiveRecord::Schema.define(version: 20150907210913) do
     t.string   "name"
     t.text     "description"
     t.datetime "date"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.integer  "user_id"
+    t.string   "location"
+    t.string   "facebook_link"
+    t.string   "start_time"
+    t.string   "end_time"
   end
 
   add_index "events", ["user_id"], name: "index_events_on_user_id"

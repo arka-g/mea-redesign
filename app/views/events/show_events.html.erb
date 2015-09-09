@@ -1,20 +1,31 @@
-<p id="notice"><%= notice %></p>
+<section id="main" class="container">
+  <header>
+    <h2>Events</h2>
+    <p>Only the latest 4 events will get displayed on the site</p>
+  </header>
+  <div class="box">
+    <div class="row">
+      <div class="12u">
+        <% @events.each do |event| %>
+          <h2>Event #<%= event.id %></h2>
+          <p>
+            <strong>Event Title:</strong>
+            <%= event.name %>
+          </p>
 
-<% @events.each do |event| %>
-  <p>
-    <strong>Event Title:</strong>
-    <%= event.name %>
-  </p>
+          <p>
+            <strong>Description:</strong>
+            <%= event.description %>
+          </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= event.description %>
-  </p>
+          <p>
+            <strong>Date:</strong>
+            <%= event.date %>
+          </p>
 
-  <p>
-    <strong>Date:</strong>
-    <%= event.date %>
-  </p>
-
-  <%= link_to 'Edit', edit_event_path(event) %>
-<% end %>
+          <%= link_to 'Edit Event', edit_event_path(event) %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
