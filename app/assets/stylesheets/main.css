@@ -1810,8 +1810,8 @@
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #e89980;
-		text-decoration: none;
+		color: #FD7C1F;
+		text-decoration: none !important;
 	}
 
 		a:hover {
@@ -2187,9 +2187,7 @@
 
 	.box {
 		background: #fff;
-		border-radius: 6px;
 		box-shadow: 0 2px 0 0 #e5e5e5;
-		margin: 0 0 2em 0;
 		padding: 3em;
 	}
 
@@ -3030,7 +3028,7 @@
 	#banner {
 		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("images/overlay.png"), url("/assets/banner.jpg");
+		background-image: url("images/overlay.png"), url("/assets/measitebackground.png");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -3116,7 +3114,7 @@
 				padding: 1em 0 1.25em 0;
 			}
 
-	body.landing #main {
+	#main {
 		margin-top: -14em;
 	}
 
@@ -3124,7 +3122,7 @@
 
 	#footer {
 		background: #f0f0f0;
-		padding: 4em 0 6em 0;
+		padding: 2em 0 2em 0;
 		text-align: center;
 	}
 
@@ -3168,6 +3166,36 @@
 				}
 
 /* CTA */
+	#team {
+		background: #474747;
+		color: #f9e5df;
+		padding: 3.5em 0 4em 0;
+		text-align: center;
+	}
+
+	#sponsors {
+		background: #FD7C1F;
+		color: #f9e5df;
+		padding: 3.5em 0 4em 0;
+		text-align: center;
+	}
+
+	#partners {
+		background: #474747;
+		color: #f9e5df;
+		padding: 3.5em 0 4em 0;
+		text-align: center;
+	}
+
+	#team-text{
+		color: white;
+	}
+
+	.pics img{
+		width: 200px;
+		height: 200px;
+		border: 8px solid #fff;
+	}
 
 	#cta {
 		background: #e89980;

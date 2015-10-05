@@ -8,19 +8,112 @@
     <%= render partial: "events_tagline" %>
   </section>
 
-  <section class="box special features">
+  <section id="events" class="box special features">
     <%= render partial: "events", locals: { events: @events } %>
   </section>
 
-  <div class="row">
-    <div class="6u 12u(narrower)">
-      <%= render partial: "about" %>
-    </div>
+</section>
 
-    <div class="6u 12u(narrower)">
-      <%= render partial: "mission" %>
-    </div>
+<section id="sponsors" class=" box special features">
+
+  <h2 id="team-text">Learn More</h2>
+  <div class="features-row">
+    <section>
+      <h2 id="team-text">About Us</h2>
+      <p>We aim to become the centralized hub of entrepreneurship and startup activities at McMaster. We provide you the tools needed to succeed in entrepreneurial ventures through collaboration with other entrepreneurs, talks, workshops, and information about the Hamilton Area Startup Community</p>
+    </section>
+    <section>
+      <h2 id="team-text">Mission Statement</h2>
+      <p>Organize social meetups and engaging activities to connect entrepreneurs at McMaster. Create a friendly, collabarative and approachable environment for aspiring entrepreneurs to get involved in.</p>
+    </section>
   </div>
+</section>
+<section class="box special features" id="team">
+
+  <h2 id="team-text">Team</h2>
+  <div class="features-row">
+    <section>
+      <h2 id="team-text">Joe Crozier</h2>
+      <h3 id="team-text">Co-President</h3>
+      <div class="pics">
+        <%= image_tag asset_url("mei_lin.jpg"), alt: "" %>
+      </div>
+    </section>
+    <section>
+      <h2 id="team-text">Dave Nidumolu</h2>
+      <h3 id="team-text">Co-President</h3>
+      <div class="pics">
+        <%= image_tag asset_url("mei_lin.jpg"), alt: "" %>
+      </div>
+    </section>
+    <section>
+      <h2 id="team-text">Danielle Fraser</h2>
+      <h3 id="team-text">VP Marketing</h3>
+      <div class="pics">
+        <%= image_tag asset_url("mei_lin.jpg"), alt: "" %>
+      </div>
+    </section>
+    <section>
+      <h2 id="team-text">Danyal Khan</h2>
+      <h3 id="team-text">VP Finance</h3>
+      <div class="pics">
+        <%= image_tag asset_url("mei_lin.jpg"), alt: "" %>
+      </div>
+    </section>
+    <section>
+      <h2 id="team-text">Gurbir Dhulla</h2>
+      <h3 id="team-text">VP Technology</h3>
+      <div class="pics">
+        <%= image_tag asset_url("mei_lin.jpg"), alt: "" %>
+      </div>
+    </section>
+    <section>
+      <h2 id="team-text">Arka Ganguli</h2>
+      <h3 id="team-text">VP Technology</h3>
+      <div class="pics">
+        <%= image_tag asset_url("mei_lin.jpg"), alt: "" %>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section class="box special features" id="sponsors">
+
+  <h2 id="team-text">Sponsors</h2>
+  <div class="features-row">
+    <section>
+      <h2 id="team-text">The Forge</h2>
+      <div class="pics">
+        <%= image_tag asset_url("Forge-01.png"), alt: "" %>
+      </div>
+    </section>
+    <section>
+      <h2 id="team-text">W Booth School of Engineering Practice</h2>
+      <div class="pics">
+        <%= image_tag asset_url("Wbooth-01.png"), alt: "" %>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section class="box special features" id="partners">
+  <h2 id="team-text">Partners</h2>
+  <div class="features-row">
+    <section>
+      <h2 id="team-text">Spectrum</h2>
+      <div class="pics">
+        <%= image_tag asset_url("spectrum.png"), alt: "" %>
+      </div>
+    </section>
+    <section>
+      <h2 id="team-text">Social Spark</h2>
+      <div class="pics">
+        <%= image_tag asset_url("spark.png"), alt: "" %>
+      </div>
+    </section>
+  </div>
+</section>
+
 
 </section>
 
