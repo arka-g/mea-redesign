@@ -1809,13 +1809,12 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: #FD7C1F;
 		text-decoration: none !important;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			color: #FD7C1F;
 		}
 
 	strong, b {
@@ -2294,7 +2293,7 @@
 			}
 
 				.box .image.featured:last-child img {
-					border-radius: 0 0 6px 6px;
+					/*border-radius: 0 0 6px 6px;*/
 				}
 
 /* Icon */
@@ -3180,6 +3179,13 @@
 		text-align: center;
 	}
 
+	#learn {
+		background: #FD7C1F;
+		color: #f9e5df;
+		padding: 3.5em 0 4em 0;
+		text-align: center;
+	}
+
 	#partners {
 		background: #474747;
 		color: #f9e5df;
@@ -3194,7 +3200,7 @@
 	.pics img{
 		width: 200px;
 		height: 200px;
-		border: 8px solid #fff;
+		border: 4px solid #fff;
 	}
 
 	#cta {

@@ -6,10 +6,10 @@ $(document).ready(function(){
     return false;
   });
 
-  $(".sponsors").click(function(){
+  $(".learn").click(function(){
     console.log('test');
     $('html,body').animate({
-       scrollTop: $('#sponsors').offset().top
+       scrollTop: $('#learn').offset().top
     }, 1000);
     return false;
   });
