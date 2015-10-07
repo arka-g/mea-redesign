@@ -1,7 +1,7 @@
 <h2 id="team-text">Sponsors</h2>
 <div class="features-row">
   <section>
-    <h2 id="team-text"><%= link_to 'The Forge', 'http://theforgehamilton.ca/' %></h2>
+    <h2 id="team-text" class="sponsors-text"><%= link_to 'The Forge', 'http://theforgehamilton.ca/' %></h2>
     <div class="pics">
       <%= link_to 'http://theforgehamilton.ca/' do %>
         <%= image_tag asset_url("Forge-01.png"), alt: "" %>
@@ -9,10 +9,18 @@
     </div>
   </section>
   <section>
-    <h2 id="team-text"><%= link_to 'W Booth School of Engineering Practice', 'http://wbooth.mcmaster.ca/' %></h2>
+    <h2 id="team-text" class="sponsors-text"><%= link_to 'W Booth School of Engineering Practice', 'http://wbooth.mcmaster.ca/' %></h2>
     <div class="pics">
       <%= link_to 'http://wbooth.mcmaster.ca/', id:'test' do %>
         <%= image_tag asset_url("Wbooth-01.png"), alt: "" %>
+      <% end %>
+    </div>
+  </section>
+  <section>
+    <h2 id="team-text" class="sponsors-text"><%= link_to 'McMaster Alumni Association', 'http://alumni.os.mcmaster.ca/s/1439/start.aspx' %></h2>
+    <div class="pics">
+      <%= link_to 'http://alumni.os.mcmaster.ca/s/1439/start.aspx', id:'test' do %>
+        <%= image_tag asset_url("alumni.png"), alt: "" %>
       <% end %>
     </div>
   </section>
